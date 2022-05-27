@@ -1,13 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 import LeftAngle from "../../assets/left_angle.png"
 import RightAngle from "../../assets/right_angle.png"
-import TempView from "../../assets/tmp_view.png"
 import GameContainer from "../../components/gamingnft/GameContainer";
 import { FiHelpCircle } from "react-icons/fi";
 import GameCard from "../../components/gamingnft/GameCard";
 import BabyDoge from "../../assets/characters/Human_Male_RDM1.png";
 import Graph from "../../assets/characters/Demon_Female_RDM1.png";
 import Vempire from "../../assets/characters/Human_Female_RDM1.png";
+import gameQuest from "../../components/quest/QuestData";
+import QuestCard from '../../components/quest/QuestCard';
+
 const gamingNft = [
   {
     id: 1,
@@ -29,7 +31,20 @@ const gamingNft = [
   },
 
 ];
-const Home = () => {
+var idx = 0;
+
+const Home = (props) => {
+    const [curQuest, setcurQuest] = useState(gameQuest[0]);
+    async function prevQuest() {
+      if(idx > 0)
+        idx--;
+      setcurQuest(gameQuest[idx]);
+    }
+    async function nextQuest() {
+      if(idx < 2)
+        idx++;
+      setcurQuest(gameQuest[idx]);
+    }
     return (
         <main>
       {/* container */}
@@ -93,11 +108,11 @@ const Home = () => {
 
             </div>
           </div>
-          <a href='/' className='mt-20'><img src={LeftAngle} alt='' className='h-50'></img></a>
-          <div className=''>
-            <img src={TempView} alt='' className='bg-cover h-full'></img>
+          <div className='mt-20'><img src={LeftAngle} alt='' className='h-50 cursor-pointer hover:opacity-50' onClick={(e)=>prevQuest()}></img></div>
+          <div className='w-1/2'>
+            <QuestCard key={curQuest.id} images={curQuest.images} title={curQuest.title} during={curQuest.during} cost={curQuest.cost} warriors={curQuest.warriors} percentage={curQuest.percentage} difficulty={curQuest.difficulty} reward={curQuest.reward} />
           </div>  
-          <a href='/' className='mt-20'><img src={RightAngle} alt='' className='h-50'></img></a>
+          <div className='mt-20'><img src={RightAngle} alt='' className='h-50 cursor-pointer hover:opacity-50' onClick={(e)=>nextQuest()}></img></div>
         </div>
       </div>
       <div className='bg-cover bg-[url(./assets/demon_city.jpg)] h-screen px-20 pt-20'>
