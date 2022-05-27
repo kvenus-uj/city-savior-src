@@ -15,30 +15,30 @@ const QuestCard = ({images, title, during, cost, warriors, percentage, difficult
             <h2 className="">Cost</h2>
         </div>
         <div className="columns-2 text-white">
-            <div className="bg-[#000] rounded-lg p-3">
+            <div className="bg-[#000] rounded-lg p-2">
                 <p>{during}</p>
             </div>
-            <div className="bg-[#000] rounded-lg p-3">
+            <div className="bg-[#000] rounded-lg p-2">
                 <p>{cost} $KAGE</p>
             </div>
         </div>
-        <div className="columns-2 py-2 mt-2 text-xl">
+        <div className="columns-2 py-1 mt-2 text-xl">
             <h2 className="text-[#f00]">Warriors required</h2>
             <h2 className="text-white">{warriors} Minimum</h2>
         </div>  
-        <div className="columns-2 text-xl py-2">
+        <div className="columns-2 text-xl py-1">
             <h2 className="text-[#f00]">Percentage Success</h2>
             <h2 className="text-white">{percentage}%</h2>
         </div>  
-        <div className="columns-2 text-xl py-2">
+        <div className="columns-2 text-xl py-1">
             <h2 className="text-[#f00]">Difficulty</h2>
             <h2 className="text-white">{difficulty}</h2>
         </div>  
-        <div className="columns-2 text-xl py-2">
+        <div className="columns-2 text-xl py-1">
             <h2 className="text-[#f00]">Potential Reward</h2>
             <h2 className="text-white">Pool of {reward} $$KAGE</h2>
         </div>
-        <div className="columns-2 text-xl py-2">
+        <div className="columns-2 text-xl py-1">
             <h2 className="text-[#1E2023]">Potential Reward</h2>
             <h2 className="text-white">Common Lootbox</h2>
         </div>
