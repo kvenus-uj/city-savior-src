@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Candal&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Candal", sans-serif;
+  font-family: "Vazir", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  background-image: url('./assets/demon_city.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-tabs .nav-link.active {
+  color: #ffc107 !important;
+  border-color: #ffc107;
+}
