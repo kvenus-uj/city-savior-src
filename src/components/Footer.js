@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#1E2023] text-[#B9BABB] bottom-0 fixed w-full z-10" style={{opacity: 0.9, backgroundColor: '#020206'}}>
+    <footer className="bg-[#1E2023] text-[#B9BABB] bottom-0 w-full z-10" style={{opacity: 0.9, backgroundColor: '#020206'}}>
       <div className="flex items-center justify-center space-x-8 md:py-5">
         <div className="md:inline-flex hidden space-x-6 ">
           <BsTwitter className="h-7 w-8 cursor-pointer" />
