@@ -1,14 +1,8 @@
 import uniCrypt from "../assets/web-logo.png";
-import Etherium from "../assets/etherium.png";
-import { MdLocalFireDepartment } from "react-icons/md";
-import { RiUserShared2Line } from "react-icons/ri";
-import { BiSun } from "react-icons/bi";
-import { FaTelegramPlane } from "react-icons/fa";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import * as nearAPI from "near-api-js";
 const {connect, keyStores, WalletConnection  } = nearAPI;
-const keyStore = new keyStores.BrowserLocalStorageKeyStore();
+// const keyStore = new keyStores.BrowserLocalStorageKeyStore();
 const config = {
   networkId: "testnet",
   keyStore: new keyStores.BrowserLocalStorageKeyStore(),

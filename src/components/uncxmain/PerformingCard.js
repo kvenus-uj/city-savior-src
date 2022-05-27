@@ -1,4 +1,3 @@
-import Progetto from "../../assets/Progetto-senza-titolo-73-2.png";
 import ProCircle from "../../assets/circle.jpg";
 import { MdKeyboardArrowUp, MdKeyboardArrowDown } from "react-icons/md";
 import { BsTwitter, BsGlobe, BsPieChartFill } from "react-icons/bs";
