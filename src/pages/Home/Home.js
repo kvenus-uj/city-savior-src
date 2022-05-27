@@ -1,17 +1,8 @@
 import React from 'react';
-import { MdKeyboardArrowUp } from "react-icons/md";
-import { BsPentagon } from "react-icons/bs";
-import Etherium from "../../assets/etherium.png"
-import Bitcoin from "../../assets/bitcoin.png"
-import Square from "../../assets/square.png"
-import WebLogo from "../../assets/web-logo.png"
 import LeftAngle from "../../assets/left_angle.png"
 import RightAngle from "../../assets/right_angle.png"
 import TempView from "../../assets/tmp_view.png"
 import GameContainer from "../../components/gamingnft/GameContainer";
-import PresalesContainer from "../../components/presales/PresalesContainer";
-import UncxMain from "../../components/uncxmain/UncxMain";
-import { UrlAccountCreator } from 'near-api-js/lib/account_creator';
 import { FiHelpCircle } from "react-icons/fi";
 import GameCard from "../../components/gamingnft/GameCard";
 import BabyDoge from "../../assets/characters/Human_Male_RDM1.png";
@@ -102,11 +93,11 @@ const Home = () => {
 
             </div>
           </div>
-          <a href='' className='mt-20'><img src={LeftAngle} alt='' className='h-50'></img></a>
+          <a href='/' className='mt-20'><img src={LeftAngle} alt='' className='h-50'></img></a>
           <div className=''>
             <img src={TempView} alt='' className='bg-cover h-full'></img>
           </div>  
-          <a href='' className='mt-20'><img src={RightAngle} alt='' className='h-50'></img></a>
+          <a href='/' className='mt-20'><img src={RightAngle} alt='' className='h-50'></img></a>
         </div>
       </div>
       <div className='bg-cover bg-[url(./assets/demon_city.jpg)] h-screen px-20 pt-20'>
